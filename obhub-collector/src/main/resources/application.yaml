@@ -1,0 +1,10 @@
+otel:
+  propagators:
+    - tracecontext
+    - b3
+  resource:
+    attributes:
+      deployment.environment: dev
+      service:
+        name: collector
+        namespace: obhub
